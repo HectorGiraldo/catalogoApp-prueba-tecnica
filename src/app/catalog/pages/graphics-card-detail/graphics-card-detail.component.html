@@ -1,0 +1,21 @@
+<h1>Detalle de Tarjeta Grafica</h1>
+
+
+<mat-divider></mat-divider>
+<br>
+
+<div class="row">
+    <div class="col-sm-4">
+        <img class="igual-relacion " [src]="graphics.img">
+    </div>
+    <div class="col-sm-8">
+        <h2>
+           {{graphics.name}}
+        </h2>
+        <p> Manufacturer: {{graphics.manufacturer}} </p>
+        <p> Assembler: {{graphics.assembler}} </p>
+        <p> Model: {{graphics.model}} </p>
+        <p> Price: {{graphics.price}}€ </p>
+        <button mat-raised-button color="primary"class="float-end" routerLink="['/']">Regresar</button>
+    </div>
+</div>
